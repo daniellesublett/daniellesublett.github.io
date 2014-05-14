@@ -1,0 +1,21 @@
+.blue {
+  color: #08298A;
+}
+
+#container p {
+  width: 70%;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #666;
+  background: #ffffff;
+}
+
+p {
+	background-color: #A39951;
+	font-family: sans-serif;
+	font-size: 20px;
+}
+
+ol {
+	background-color: #A39951;
+}
