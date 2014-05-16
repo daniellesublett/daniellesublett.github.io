@@ -36,6 +36,13 @@ h3 {
 
 }
 
+#sidebar{
+	float:left;
+    width:150px;
+    background:white;
+    padding: 10px;
+}
+
 span.answer {
 	color:#601919;
 	font-weight: bold;
