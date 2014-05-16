@@ -1,0 +1,47 @@
+#content_area{
+	margin:0px auto;
+    width: 800px; 
+}
+
+ul {
+	background-color: #E9E9E9;
+	font-family: helvetica;
+	width:600px;
+	padding: 50px;
+
+}
+
+h1 {
+	background-color: #E9E9E9;
+	text-align: center;
+	font-size: 65px;
+	font-family: helvetica;
+	width:400px;
+	height:155px;
+	margin:0px auto;
+	padding: 20px;
+	border: 5px solid #601919;
+}
+
+h2 {
+	font-size: 40px;
+	font-family: helvetica;
+}
+
+h3 {
+	font-size: 30px;
+	font-family: helvetica;
+	color:#601919;
+	border-bottom: 2px solid #601919;
+
+}
+
+span.answer {
+	color:#601919;
+	font-weight: bold;
+
+}
+
+img {
+   width:600px;
+}
