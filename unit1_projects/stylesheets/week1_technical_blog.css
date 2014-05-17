@@ -1,6 +1,6 @@
 #content_area{
 	margin:0px auto;
-    width: 100px; 
+    width: 800px; 
 }
 
 ul {
@@ -20,7 +20,7 @@ h1 {
 	height:155px;
 	margin:0px auto;
 	padding: 20px;
-	border: 5px solid blue;
+	border: 5px solid #601919;
 }
 
 h2 {
@@ -38,7 +38,7 @@ h3 {
 
 #sidebar ul{
 	float:left;
-    width:150px;
+    width:100px;
     background-color:white;
     padding: 1px;
 }
