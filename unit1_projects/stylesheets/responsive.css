@@ -1,0 +1,187 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+header {
+    text-align: center;
+    font-family: helvetica;
+    font-size: 50px;
+    color: black;
+    background-color:grey;
+}
+footer {
+    text-align: center;
+    font-family: helvetica;
+    font-size: 25px;
+    color: black;
+    background-color:grey;
+}
+
+/*  SECTIONS  */
+.section {
+    /* Clear is affecting the floats in the .group class? */
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1%; 
+}
+.col:first-child { margin-left: 0; }
+
+p {
+    padding: 5px;
+}
+
+/*  GROUPING  */
+.group:before,
+.group:after {
+	content:"";
+	display:table;
+}
+.group:after {
+	clear:both;
+}
+.group {
+    zoom:1; /* For IE 6/7 */
+}
+
+/*  GRID OF FOUR  
+Border and margin are on the outside of the declared width of an object. Which means that they can break a carefully spaced grid. The grid author specified the width of columns + left/right margin = 99.9%... then we added border, which broke it because it pushed it over 100%. 
+*/
+
+.span_1_of_4 {
+    width: 24%;
+}
+
+.span_2_of_4 {
+    width: 48%;
+}
+
+.span_3_of_4 {
+    width: 72%;
+}
+
+.span_4_of_4 {
+    width: 99%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+/* MAKE SURE TO ADAPT SPAN CLASSES WITH CORRECT NUMBER OF COLUMNS!*/
+@media only screen and (max-width: 480px) {
+	.span_4_of_4 {
+		width: 100%; 
+	}
+	.span_3_of_4 {
+		width: 100%; 
+	}
+	.span_2_of_4 {
+		width: 100%;
+	}
+
+	.span_1_of_4 {
+		width: 100%;
+	}
+
+	.col { 
+		margin: 1% 0 1% 0%;
+	}
+}
+
+#col1{
+    background: rgb(245,246,246); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(245,246,246,1) 0%, rgba(184,186,198,1) 83%, rgba(184,186,198,1) 83%, rgba(245,246,246,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(245,246,246,1)), color-stop(83%,rgba(184,186,198,1)), color-stop(83%,rgba(184,186,198,1)), color-stop(100%,rgba(245,246,246,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(245,246,246,1) 0%,rgba(184,186,198,1) 83%,rgba(184,186,198,1) 83%,rgba(245,246,246,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(245,246,246,1) 0%,rgba(184,186,198,1) 83%,rgba(184,186,198,1) 83%,rgba(245,246,246,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(245,246,246,1) 0%,rgba(184,186,198,1) 83%,rgba(184,186,198,1) 83%,rgba(245,246,246,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(245,246,246,1) 0%,rgba(184,186,198,1) 83%,rgba(184,186,198,1) 83%,rgba(245,246,246,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f6', endColorstr='#f5f6f6',GradientType=0 ); /* IE6-9 */
+
+}
+#col2{
+    background: rgb(245,246,246); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(245,246,246,1) 0%, rgba(219,220,226,1) 8%, rgba(184,186,198,1) 18%, rgba(221,223,227,1) 76%, rgba(245,246,246,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(245,246,246,1)), color-stop(8%,rgba(219,220,226,1)), color-stop(18%,rgba(184,186,198,1)), color-stop(76%,rgba(221,223,227,1)), color-stop(100%,rgba(245,246,246,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(245,246,246,1) 0%,rgba(219,220,226,1) 8%,rgba(184,186,198,1) 18%,rgba(221,223,227,1) 76%,rgba(245,246,246,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(245,246,246,1) 0%,rgba(219,220,226,1) 8%,rgba(184,186,198,1) 18%,rgba(221,223,227,1) 76%,rgba(245,246,246,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(245,246,246,1) 0%,rgba(219,220,226,1) 8%,rgba(184,186,198,1) 18%,rgba(221,223,227,1) 76%,rgba(245,246,246,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(245,246,246,1) 0%,rgba(219,220,226,1) 8%,rgba(184,186,198,1) 18%,rgba(221,223,227,1) 76%,rgba(245,246,246,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f6', endColorstr='#f5f6f6',GradientType=0 ); /* IE6-9 */
+
+}
+
+#col3{
+    background: rgb(245,246,246); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(245,246,246,1) 0%, rgba(219,220,226,1) 21%, rgba(184,186,198,1) 49%, rgba(221,223,227,1) 76%, rgba(245,246,246,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(245,246,246,1)), color-stop(21%,rgba(219,220,226,1)), color-stop(49%,rgba(184,186,198,1)), color-stop(76%,rgba(221,223,227,1)), color-stop(100%,rgba(245,246,246,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(245,246,246,1) 0%,rgba(219,220,226,1) 21%,rgba(184,186,198,1) 49%,rgba(221,223,227,1) 76%,rgba(245,246,246,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(245,246,246,1) 0%,rgba(219,220,226,1) 21%,rgba(184,186,198,1) 49%,rgba(221,223,227,1) 76%,rgba(245,246,246,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(245,246,246,1) 0%,rgba(219,220,226,1) 21%,rgba(184,186,198,1) 49%,rgba(221,223,227,1) 76%,rgba(245,246,246,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(245,246,246,1) 0%,rgba(219,220,226,1) 21%,rgba(184,186,198,1) 49%,rgba(221,223,227,1) 76%,rgba(245,246,246,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f6', endColorstr='#f5f6f6',GradientType=0 ); /* IE6-9 */
+
+
+}
+
+#col4 {
+    background: rgb(245,246,246); 
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  rgba(245,246,246,1) 0%, rgba(219,220,226,1) 21%,              rgba(184,186,198,1) 49%, rgba(221,223,227,1) 76%, rgba(245,246,246,1) 100%); 
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(245,246,246,1)),   color-stop(21%,rgba(219,220,226,1)), color-stop(49%,rgba(184,186,198,1)), color-stop(76%,rgba(221,223,227,1)), color-stop(100%,rgba(245,246,246,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg,  rgba(245,246,246,1) 0%,rgba(219,220,226,1) 21%,rgba(184,186,198,1) 49%,rgba(221,223,227,1) 76%,rgba(245,246,246,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg,  rgba(245,246,246,1) 0%,rgba(219,220,226,1) 21%,rgba(184,186,198,1) 49%,rgba(221,223,227,1) 76%,rgba(245,246,246,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-45deg,  rgba(245,246,246,1) 0%,rgba(219,220,226,1) 21%,rgba(184,186,198,1) 49%,rgba(221,223,227,1) 76%,rgba(245,246,246,1) 100%); /* IE10+ */
+	background: linear-gradient(135deg,  rgba(245,246,246,1) 0%,rgba(219,220,226,1) 21%,rgba(184,186,198,1) 49%,rgba(221,223,227,1) 76%,rgba(245,246,246,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f6', endColorstr='#f5f6f6',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
