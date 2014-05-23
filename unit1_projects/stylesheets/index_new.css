@@ -1,0 +1,90 @@
+header{
+	width: 100%;
+	height: 200px;
+	background-image: url("images/giltwood1.jpg");
+	background-repeat:no-repeat;
+    background-position:right top;
+	border-bottom: solid 1px black;
+}
+
+header h1{
+	text-align: right;
+	font-family: helvetica;
+	font-size: 40px;
+	padding-top: 80px;
+	padding-right: 80px;
+}
+
+.section {
+    /* Clear is affecting the floats in the .group class? */
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1%; 
+}
+.col:first-child { margin-left: 0; }
+
+.group:before,
+.group:after {
+	content:"";
+	display:table;
+}
+.group:after {
+	clear:both;
+}
+.group {
+    zoom:1; /* For IE 6/7 */
+}
+
+
+#list1 {
+    
+}
+
+
+#phase {
+	border-bottom: solid 1px black;
+}	
+
+
+.span_4_of_4 {
+	width: 100%; 
+}
+
+.span_3_of_4 {
+	width: 74.6%; 
+}
+
+.span_2_of_4 {
+	width: 49.2%; 
+}
+
+.span_1_of_4 {
+	width: 23.8%; 
+}
+
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.span_4_of_4 {
+		width: 100%; 
+	}
+	.span_3_of_4 {
+		width: 100%; 
+	}
+	.span_2_of_4 {
+		width: 100%; 
+	}
+	.span_1_of_4 {
+		width: 100%; 
+	}
+}
+
+float:left;
+}

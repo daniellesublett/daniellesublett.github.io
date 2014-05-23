@@ -1,0 +1,133 @@
+
+/*  SECTIONS  */
+.section {
+    /* Clear is affecting the floats in the .group class? */
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1%; 
+}
+.col:first-child { margin-left: 0; }
+
+p {
+    padding: 5px;
+}
+
+/*  GROUPING  */
+.group:before,
+.group:after {
+	content:"";
+	display:table;
+}
+.group:after {
+	clear:both;
+}
+.group {
+    zoom:1; /* For IE 6/7 */
+}
+
+/*  GRID OF FOUR  
+Border and margin are on the outside of the declared width of an object. Which means that they can break a carefully spaced grid. The grid author specified the width of columns + left/right margin = 99.9%... then we added border, which broke it because it pushed it over 100%. 
+*/
+
+.span_1_of_4 {
+    width: 24%;
+}
+
+.span_2_of_4 {
+    width: 48%;
+}
+
+.span_3_of_4 {
+    width: 72%;
+}
+
+.span_4_of_4 {
+    width: 99%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+/* MAKE SURE TO ADAPT SPAN CLASSES WITH CORRECT NUMBER OF COLUMNS!*/
+@media only screen and (max-width: 480px) {
+	.span_4_of_4 {
+		width: 100%; 
+	}
+	.span_3_of_4 {
+		width: 100%; 
+	}
+	.span_2_of_4 {
+		width: 100%;
+	}
+
+	.span_1_of_4 {
+		width: 100%;
+	}
+
+	.col { 
+		margin: 1% 0 1% 0%;
+	}
+}
+
+#content_area{
+	margin:0px auto;
+    width: 1000px; 
+}
+
+ul {
+	background-color: #E9E9E9;
+	font-family: helvetica;
+	padding: 50px;
+
+}
+
+h1 {
+	background-color: #E9E9E9;
+	text-align: center;
+	font-size: 65px;
+	font-family: helvetica;
+	width:400px;
+	margin:0px auto;
+	padding: 10px;
+	border: 5px solid #601919;
+}
+
+h2 {
+	font-size: 40px;
+	font-family: helvetica;
+}
+
+h3 {
+	font-size: 30px;
+	text-align: center;
+	font-family: helvetica;
+	color:#601919;
+	border-bottom: 2px solid #601919;
+}
+
+p {
+	font-size: 20px;
+}
+
+
+span.answer {
+	color:#601919;
+	font-weight: bold;
+
+}
+
+#all_positions{
+	width:60%;
+	margin-right: 20%;
+    margin-left: 20%%;
+}
+
+#absolute{
+	width: 473px;
+}

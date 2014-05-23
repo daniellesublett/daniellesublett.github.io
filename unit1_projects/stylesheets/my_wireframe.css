@@ -1,0 +1,27 @@
+body {
+	margin:0px auto;
+    width: 800px; 
+}
+
+h1 {
+	text-align: center;
+	font-family: Varela Round;
+	font-size: 40px;
+	border-bottom: solid 2px black;
+}
+
+header {
+	font-family: Varela Round;
+}
+
+header ol {
+	width:60%;
+}
+
+ul {
+	font-family: Varela Round;
+	font-size: 12px;
+	padding:5px;
+	width:50%;
+	background-color: #F2F2F2;
+}
