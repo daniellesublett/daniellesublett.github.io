@@ -1,0 +1,308 @@
+body {
+background: url(../images/gothic.jpg) no-repeat center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;	
+}
+
+ol, ul {
+	list-style: none;
+}
+
+#nav_bar{
+	width: 100%;
+	height: 10%;
+	color: white;
+
+	font-family: "Vollkorn";
+	font-size: 25px;
+	background: -moz-linear-gradient(left,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.01) 99%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0.65)), color-stop(99%,rgba(0,0,0,0.01)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */*/
+    background: -webkit-linear-gradient(left,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.01) 99%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */*/
+    background: -o-linear-gradient(left,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.01) 99%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.01) 99%,rgba(0,0,0,0) 100%); /* IE10+ */*/
+    background: linear-gradient(to right,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.01) 99%,rgba(0,0,0,0) 100%); /* W3C */*/
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */*/
+	/*float: left;*/
+	margin: 0 0 3em 0;
+	/*padding: 0;*/
+	}
+
+#nav_bar li{
+	/*float: left;*/
+	display: inline-block;
+	padding: 10px 20px;
+	text-decoration: none;
+	font-weight: bold;
+	color: white;
+	/*border-right: 1px solid #ccc;*/
+}
+
+
+
+/*<div class="navbar navbar-fixed-top my-gradient">
+	<div class="container">
+		<a href="#" class="navbar-brand">Navbar Brand</a>
+		<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<div class="nav-collapse collapse bs-navbar-collapse">
+			<ul class="nav navbar-nav">
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Item 1</a></li>
+						<li><a href="#">Item 1</a></li>
+						<li><a href="#">Item 1</a></li>
+						<li><a href="#">Item 1</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>*/
+#content_area{
+	margin:10px auto;
+    width: 65%; 
+    background: -moz-linear-gradient(left,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.01) 99%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0.65)), color-stop(99%,rgba(0,0,0,0.01)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */*/
+    background: -webkit-linear-gradient(left,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.01) 99%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */*/
+    background: -o-linear-gradient(left,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.01) 99%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.01) 99%,rgba(0,0,0,0) 100%); /* IE10+ */*/
+    background: linear-gradient(to right,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.01) 99%,rgba(0,0,0,0) 100%); /* W3C */*/
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */*/
+    padding: 50px;
+    border-radius: 10px;
+}
+
+/*#article_content  {
+	display: block;
+	border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+	background-color: #E9E9E9;
+	font-family: helvetica;
+	width:600px;
+	padding: 20px;
+
+}*/
+
+header{
+	background-color: rgba(230, 230, 230, 0.6);
+	text-align: center;
+	margin:15px auto;
+	padding: 20px;
+}
+
+header img{
+	   width:40px;
+       border:none;
+       display: inline-block;
+
+}
+
+header h1{
+	font-size: 65px;
+	font-family: "Vollkorn";
+	margin:10px auto;
+	padding: 20px;
+	color:#331A00;
+	text-align: center;
+}
+
+
+header h2{
+	font-size: 40px;
+	font-family: "Vollkorn";
+	margin:5px auto;
+	padding: 5px;
+	color:#331A00;
+	text-align: center;
+}
+
+h1 {
+	font-size: 65px;
+	font-family: "Vollkorn";
+	margin:10px auto;
+	padding: 20px;
+	color:white;
+	text-align: center;
+	/*border: 5px solid #757474;*/
+}
+
+
+#content_area h2 {
+	font-size: 50px;
+	font-family: "Vollkorn";
+	color:#ead5C2;
+	text-align: center;
+}
+
+#menu li h2 {
+	font-size:20px;
+	text-align: left;
+}
+
+#content_area h3 {
+	font-size: 40px;
+	font-family: "Vollkorn";
+	color:#331A00;
+	text-align: center;
+
+}
+
+#content_area h4 {
+	font-size: 35px;
+	font-family: "Vollkorn";
+	color:#331A00;
+	text-align: center;
+}
+
+#sidebar{
+	float:left;
+    width:150px;
+    padding: 10px;
+    background-color: #E9E9E9;
+}
+
+
+
+span.text {
+	color: black;
+	font-size: 20px;
+	font-weight: bold;
+	width: 65%;
+	font-family: "Vollkorn";
+
+}
+
+.code {
+background-color: #F2F2F2;
+font-family: courier;
+padding: 10px;
+}
+
+a:-webkit-any-link {
+color: white;
+text-decoration: underline;
+cursor: auto;
+}
+
+img {
+   width:500px;
+   padding:10px;
+   display: block;
+    margin-left: auto;
+    margin-right: auto;
+   border: 5px solid #757474;
+}
+
+#menu{
+	padding-right: 20px;
+	font-family: helvetica;
+	color: #969595;
+	background-color:rgba(240, 240, 240, 0.4); 
+}
+
+#menu h2{
+	font-size: 25px;
+}
+
+#menu #phase{
+	color:black;
+	font-size: 40px;
+}
+
+
+.preview_container {
+	/*border: solid 1px gray;*/
+	padding:10px;
+	margin-bottom: 20px;
+
+}
+
+.preview_container img{
+	width: 70%;
+	padding:10px;
+
+}
+
+.preview_container p {
+	padding-left: 20px;
+	font-family: times;
+	font-size: 20px;
+}
+
+.preview_container h3 {
+	padding-left: 20px;
+	font-family: "Vollkorn";
+	font-size: 25px;
+	color: #331A00;
+}
+
+.section {
+    /* Clear is affecting the floats in the .group class? */
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+.col {
+	display: block;
+	float:left;
+	/*margin: 1% 0 1% 1%; */
+}
+.col:first-child { margin-left: 0; }
+
+.group:before,
+.group:after {
+	content:"";
+	display:table;
+}
+.group:after {
+	clear:both;
+}
+.group {
+    zoom:1; /* For IE 6/7 */
+}
+
+.span_4_of_4 {
+	width: 100%; 
+}
+
+.span_3_of_4 {
+	width: 74.6%;
+	float:right; 
+}
+
+.span_2_of_4 {
+	width: 49.2%; 
+}
+
+.span_1_of_4 {
+	width: 23.8%; 
+}
+
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.span_4_of_4 {
+		width: 100%; 
+	}
+	.span_3_of_4 {
+		width: 100%; 
+	}
+	.span_2_of_4 {
+		width: 100%; 
+	}
+	.span_1_of_4 {
+		width: 100%; 
+	}
+}
+
+float:left;
+}
