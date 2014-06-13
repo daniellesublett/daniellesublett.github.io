@@ -137,6 +137,18 @@ span.text {
 
 }
 
+.code {
+background-color: #F2F2F2;
+font-family: courier;
+padding: 10px;
+}
+
+a:-webkit-any-link {
+color: white;
+text-decoration: underline;
+cursor: auto;
+}
+
 img {
    width:500px;
    padding:10px;

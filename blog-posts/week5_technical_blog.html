@@ -1,0 +1,89 @@
+<!doctype html>
+<link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="../stylesheets/new_index.css">
+        <title>Week 5 Technical Blog</title>
+    </head>
+<body>
+         <div id="nav_bar">
+        <ul>
+            <li><a href="http://daniellesublett.github.io/">Home</a></li>
+            <li><a href="https://github.com/daniellesublett">Projects</a></li>
+        </ul>
+    </div>
+
+
+
+
+</div>
+    <div id="content_area">
+        <h1>Technical Blog Week 5</h1>
+        <h2>Keeping it Classy</h2>
+                    <h4></h4>
+                    <span class="text"><p>Classes in Ruby act like templates. These templates can have many individual instances, but they share traits or behaviors. For example, let's say we want to create Ruby objects in our program that represent 3 different animals. Each of these animals will have a number of legs, a sound they make, and a favorite type of food. We could create each of these animal objects individually, but since this is Ruby, we can create a CLASS that all 3 of these animals will "inherit" from. Just as plant and animal species are separated and catalogued by their common traits, classes are a way of thinking about individual instances of a collection of traits and behaviors.</p></span>
+
+                    <a href = "http://sermoa.wordpress.com/2011/06/19/ruby-classes-and-superclasses/"><img src="../images/classes-and-superclasses.png"/></a>
+
+                    <h4>Creating a New Class</h4>
+                    <span class="text"><p>There are several built-in classes in Ruby, Strings, Arrays, Fixnum are all examples. These big built-in classes actually inherit from other "superclasses", the "superclassiest" being OBJECT. So we know that if we are creating a new class, we're actually creating a new object.</p>
+                    <p>Here's where it might get a little confusing. A class is an object. But so is every INSTANCE of that class. Let's demonstrate this using a couple examples from the plant kingdom. First, let's adapt an example from Chris Pine's book <a href ="https://pine.fm/LearnToProgram/">Learn to Program</a>, and make ourselves a tree.</p></span><br/>
+
+                    <p class="code"><strong>class</strong> Tree</p><br/>
+
+                    <span class="text"><p>Well that was easy, but we're not done yet. Next we need to use our <em>instance method</em> initialize to create an instance of our tree class. That is to say, we've made a class, now we're going to make a tree, and tell Ruby what exactly a "tree" is. When we initialize a class, we are telling Ruby to assign certain variables to every object of that class type.</p>
+                    <p>If you were a farmer with an apple orchard, for example, you might want a handy way of keeping track of the number of healthy apple trees you had on your property, the heights that they grow to, and the amount of fruit they produce.</p></span>
+
+                    <p class="code"><strong>class</strong> Tree<br/>
+                        def initialize<br/>
+                        @height = 0<br/>
+                        @fruit_yeild = 0<br/>
+                        @alive = true<br/>
+                    </p>
+                
+                    <h4>What Does a Tree "Do"?</h4>
+                    <span class="text">
+                    <p>So now we have instance variables that will tell us about the height of the individual tree in class tree, the amount of fruit it yields, and it's health (in this case we're not being too detailed). We want to create our class so that it keeps an accurate count of the apples we have picked (from the live trees only. You can't pick fruit from a dead tree!) </p></span><br/>
+
+                    <p class="code"><strong>class</strong> Tree<br/>
+                        def initialize<br/>
+                        @height = 0<br/>
+                        @fruit_yield = 0<br/>
+                        @alive = true<br/><br/>
+
+                        <strong>def</strong> @fruit_yield<br/>
+                         &nbsp;<strong>if</strong> @alive<br/>
+                        &nbsp;&nbsp;@fruit_yield<br/>
+                        &nbsp;<strong>else</strong>"The tree is dead and is not producing fruit."<br/>
+                        <strong>end</strong><br/>
+
+                        <strong>def</strong> pick_apple
+                          &nbsp;<strong>if</strong> @alive<br/>
+                            &nbsp;&nbsp;<strong>if</strong> @fruit_yield > 1<br/>
+                                    &nbsp;&nbsp;&nbsp;@fruit_yield = @fruit_yield -1<br/>
+                                    &nbsp;&nbsp;&nbsp;"You have picked one apple."<br/>
+                            &nbsp;&nbsp;<strong>else</strong>
+                                    &nbsp;&nbsp;&nbsp;"You have no more apples on this tree."<br/>
+                            &nbsp;&nbsp;<strong>end</strong><br/>
+                        &nbsp;<strong>else</strong><br/>
+                                &nbsp;&nbsp;"The tree is dead and there is nothing to pick."<br/>
+                        &nbsp;<strong>end</strong><br/>
+                    <strong>end</strong><br/>
+                    <strong>end</strong><br/>
+                    </p>
+                    
+
+                    <h4>Further Reading</h4>
+                    <span class="text"><ul>
+                        <li><a href = "http://blog.rubybestpractices.com/posts/rklemme/018-Complete_Class.html">The Complete Class</a></li>
+                        <li><a href = "http://juixe.com/techknow/index.php/2007/01/22/ruby-class-tutorial/">Ruby Class Tutorial</a></li>
+                        <li><a href = "http://code.tutsplus.com/tutorials/ruby-for-newbies-working-with-classes--net-15938">Working with Classes</a></li>
+
+
+
+                    </ul></span><br/><br/>
+
+     
+        
+    </div>
+
+    </body>
+</html>
