@@ -1,0 +1,61 @@
+<!doctype html>
+<link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="../stylesheets/new_index.css">
+        <title>Week 7 Technical Blog</title>
+    </head>
+<body>
+         <div id="nav_bar">
+        <ul>
+            <li><a href="http://daniellesublett.github.io/">Home</a></li>
+            <li><a href="https://github.com/daniellesublett">Projects</a></li>
+        </ul>
+    </div>
+
+
+
+
+</div>
+    <div id="content_area">
+        <h1>Technical Blog Week 7</h1>
+        <h2>SQL Injection Attacks</h2>
+                    <h4></h4>
+                    <span class="text"><p>An SQL injection attack can leave your data vulnerable to unauthorized alteration, and can also expose private data such as social security or credit card information. Using this malicious technique, hackers can inject SQL commands (usually via web page input) and seriously compromise the security of a web application. Essentially, an injection attack means that someone can steal or make changes to your data.</p></span>
+
+                    <a href = "https://www.owasp.org/index.php/SQL_Injection_Prevention_Cheat_Sheet"><img src="../images/hacktivist2.jpg"/></a>
+
+                    <h4>How Hackers Gain Access</h4>
+                    <span class="text"><p>Any field within a web application that accepts user input and performs a database query is susceptible to attack. This can include login pages, sign up forms and shopping cart checkouts. Your customer login field, for example will directly query your customer database, and with the right commands entered into that field, all of the data in that customer database could be altered or accessed.</p>
+                    <h4>The Perils of "=" and Other Unsavory Characters</h4>
+                    <p>Hackers use specific SQL commands to bypass the regular login page. Keep in mind that this is only possible if the web app's inputs have not been "sanitized", meaning that there is a block in place to prevent such commands from being effective unless they are initiated by an administrator. This can be difficult though, as there may be several different ways of accessing the database through customer-facing forms that the developer may not have anticipated.</p>
+                    <p>One example of how an injection can gain access is based on the premise that an injection based on "=" always evaluates to true. By including a statement like "1=1", or "x=x" into a username or password field, depending on the level of sanitization of the sites, someone might be able to access the database.</p></span>
+
+                    <a href = "http://www.w3schools.com/sql/sql_injection.asp"><img src="../images/sql_injection.jpg"/></a>
+
+                    <span class="text"><p>There are several other ways a hacker could manipulate SQL code to gain access to information from a user-facing field, and the best guard against these injection attacks is to use something called SQL parameters, which are <a href="http://www.mssqltips.com/sqlservertip/2981/using-parameters-for-sql-server-queries-and-stored-procedures/">values that are added to an SQL query at execution time, in a controlled manner."</a> One method of establishing parameters is to only allow an input field to accept certain characters. Prepared Statements and Parameterized Queries define the SQL code that could be used in an attack so that the database can tell the difference between code and data. For example, if your app will only accept upper and lowercase letters in the name field, attempting an injection with any character besides a letter (like "=") will result in an error, not in a hack. The database will not even be queried since the type of input will be restricted.</p></span>
+
+                    <span class="text"><p>A couple more techniques for fighting against SQL injection attacks are:
+                        <ul>
+                           <li>Stored Procedures - Procedures are stored in the database itself, and can only be called from WITHIN the application, thus no procedures affecting the database can be entered by a user.</li> 
+                           <li>Escaping all User Supplied Input - This ensures that any characters entered by a user will not be confused for code. As I understand it, escaping user input works in a similar way to creating comments in your code files. These commented items will not run.</li>
+                        </ul>
+
+</p></span>
+
+
+
+                    <span class="text"><p></p></span>
+
+                    
+
+                    <h4>Further Reading</h4>
+                    <span class="text"><ul>
+                        <li><a href = "http://www.veracode.com/security/sql-injection">SQL Injection Tutorial</a></li>
+                        <li><a href = "http://www.enterprisenetworkingplanet.com/netsecur/article.php/3866756/10-Ways-to-Prevent-or-Mitigate-SQL-Injection-Attacks.htm">10 Ways to Prevent SQL Injection Attacks</a></li>
+                    </ul></span><br/><br/>
+
+     
+        
+    </div>
+
+    </body>
+</html>
