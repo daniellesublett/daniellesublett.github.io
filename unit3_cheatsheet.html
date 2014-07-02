@@ -1,0 +1,117 @@
+<html>
+  <head>
+	  <title>Ruby Enumerator Cheat Sheet</title>
+
+	    <link rel="stylesheet" href="stylesheets/unit3_cheatsheet.css">
+	
+  </head>
+    <body>
+    <header>Ruby Enumerable Cheat Sheet</header>
+    <div id="big_def"><p>The Enumerable Module is a bunch of methods that work
+      with collections such as Arrays, Hashes and Ranges. Here are some of our favorite 
+      methods!
+    </p></p></div>
+    <div class = "method_box">
+      <div class = "method_name">
+        map
+      </div>
+        <div class = "method_def">
+          Map returns a new array after performing a block operation on each of
+          the elements in the collection. Map is like a transformation method.
+          It applies your block of code to the collection <em>transforming</em> it!
+        </div>
+        <div class = "method_code">
+         (1..4).map {|x| x+1}<br/>
+         #=> [2,3,4,5]
+        </div>
+    </div>
+    
+    <div class = "method_box">
+       <div class = "method_name">
+         to_a
+       </div>
+      <div class = "method_def">Returns an array based on the argument passed into
+        it. For example, if you pass in a range (1..7) it will return an array of the
+        numbers 1 through 7. Calling to_a on a hash will return nested arrays with 2 items each (the key, and the value)
+      </div>
+      <div class = "method_code">
+        (1..7).to_a<br/>
+        #=> [1,2,3,4,5,6,7]<br/>
+        { 'a'=>1, 'b'=>2, 'c'=>3 }.to_a<br/>
+        #=> [["a", 1], ["b", 2], ["c", 3]]
+      </div>
+    </div>
+    
+    <div class = "method_box">
+       <div class = "method_name">
+       each_with_object
+      </div>
+       <div class = "method_def">
+         Iterates each element passed through a block with the arbitrary object
+         passed first. This is useful for modifying hashes.
+       </div>
+       <div class = "method_code">
+         %w(gnidoC si nuf).each_with_object({}) { |str, hsh| hsh[str] = str.reverse }
+         # => {'gnidoC' => 'Coding', 'si' => 'is', 'nuf' => 'fun'}
+       </div>
+    </div>
+    
+    <div class = "method_box">
+       <div class = "method_name">
+         include?
+       </div>
+       <div class = "method_def">
+         Returns true if any member of enum equals obj. Equality is tested using ==.
+         Checks if a collection "includes" the item passed in as an argument.
+       </div>
+       <div class = "method_code">
+         array = [1,2,3,4]
+         array.include?(4)<br/>
+         #=> true
+       </div>
+    </div>
+    
+    <div class = "method_box">
+       <div class = "method_name">
+         each_slice
+       </div>
+       <div class = "method_def">
+         Breaks collection into a group of <em>n</em> sized elements. Useful to transform
+         an array into an array of sub arrays for modifications. 
+       </div>
+       <div class = "method_code">
+         (1..9).each_slice(3) { |x| print x }<br/>
+         #=> [1, 2, 3][4, 5, 6][7, 8, 9]
+       </div>
+    </div>
+    
+    <div class = "method_box">
+       <div class = "method_name">
+         grep
+       </div>
+       <div class = "method_def">
+         Returns an array of every element in enum for which 
+         Pattern === element. If the optional block is supplied, 
+         each matching element is passed to it, and the block’s 
+         result is stored in the output array. In short, grep finds and 
+         returns all things matching the argument. 
+       </div>
+       <div class = "method_code">
+         ["Test", "Foo", "Bar"].grep 'Foo'<br/>
+         #=> ["Foo"]
+       </div>
+    </div>
+    
+    <div class = "method_box">
+       <div class = "method_name">
+         inject 
+       </div>
+       <div class = "method_def">
+         Easily allows users to add, multiply, subtract through each element of a collection. 
+       </div>
+       <div class = "method_code">
+         (1..5).inject { |sum, element| sum + element }<br/>
+         #=>15
+       </div>
+    </div>
+    </body>
